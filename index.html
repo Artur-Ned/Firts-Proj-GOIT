@@ -441,7 +441,7 @@
             <label class="modal-form-field">
                     Почта
                     <span class="modal-form-input-wrapper">
-                    <input type="text" name="user-mail" class="modal-form-input">
+                    <input type="email" name="user-mail" class="modal-form-input">
                     <svg class="modal-form-icon">
                         <use href="./images/sprite.svg#icon-email"></use>
                     </svg>
@@ -449,10 +449,10 @@
             </label>
             <label class="modal-form-field">
                 Комментарий
-                <textarea name="user-message" id=""></textarea>
+                <textarea class="modal-form-message" name="user-message" id="" placeholder="Введите текст"></textarea>
             </label>
-                <input type="checkbox" name="user-text-checkbox" value="accept-text-checkbox" class="modal-form-checkbox">
-                <label  class="modal-form-text-checkbox">Соглашаюсь с рассылкой и принимаю <a href="">Условия 
+                <input id="user-police" type="checkbox" name="user-text-checkbox" value="accept-text-checkbox" class="modal-form-checkbox">
+                <label  for="user-police" class="modal-form-text-checkbox">Соглашаюсь с рассылкой и принимаю <a href="">Условия 
                 договора</a></label>
                 <button type="submit" class="modal-form-btn">Отправить</button>
             </form>
