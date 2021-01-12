@@ -45,6 +45,7 @@ img {
   --all-text-color: #212121;
   --background-main-color: #ffffff;
   --gray: rgba(117, 117, 117, 1);
+  --footer-color: #2f303a;
 }
 
 /*outline: 2px soloid tomato - рамка*/
@@ -537,20 +538,75 @@ outline: none;
   outline: none;
 }
 
-.text-foter-links {
+.text-footer-links {
   font-family: var(--main-font);
   font-weight: 700;
   font-size: 14px;
-  line-height: 1, 143x;
+  line-height: 1.143;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--background-main-color);
   margin-bottom: 20px;
 }
+
 .adres-footer-link {
 transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.footer-item:last-child {
+  margin-left: 93px;
+}
+
+.footer-item:nth-child(2) {
+  margin-left: 70px;
+}
+
+.footer-label {
+display: flex;  
+}
+
+.footer-input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  padding: 15px 16px;
+  color: var(--background-main-color);
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: var(--footer-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-input:focus,
+.footer-input:hover {
+  outline: none;
+  border: 1px solid var(--accent-color-heder);
+}
+
+.footer-btn {
+  display: flex;
+  margin-left: 12px;
+ padding: 10px 62px 10px 29px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  cursor: pointer;
+  color: var(--background-main-color);
+  background: var(--accent-color-heder);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  font-family: var(--main-font);
+  width: 200px;
+  height: 50px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 /*----------body portfoli--------------*/
 /*----------portfolio-nav--------------*/
@@ -689,7 +745,7 @@ transform: translateY(100%);
 
 .portfolio-footer,
 .main-footer {
-  background-color: #2f303a;
+  background-color: var(--footer-color);
   height: 252px;
   padding: 60px 0px;
 }
@@ -728,10 +784,10 @@ a[href="https://goo.gl/maps/fY5pNtDdv6tUA1cWA"]
 .footer-list {
   display: flex;
 }
-.footer-item:not(:first-child) {
+/* .footer-item:not(:first-child) {
   margin-left: 70px;
   margin-top: 17px;
-}
+} */
 
 /*========================footerlink===============*/
   .footer-social-list-link {
