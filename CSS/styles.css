@@ -496,7 +496,6 @@ margin-bottom: 50px;
   margin-right: 30px;
 }
 .regular-customer-item {
-  border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -509,6 +508,7 @@ margin-bottom: 50px;
   width: 170px;
   height: 90px;
   border: 1px solid #AFB1B8;
+  border-radius: 4px;
   fill: rgba(175, 177, 184, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -775,7 +775,15 @@ transform: translateY(100%);
 
 a[href="https://goo.gl/maps/fY5pNtDdv6tUA1cWA"]
 {
-  color: var(--background-main-color);
+display: block;
+font-family: var(--main-font);
+font-weight: 400;
+font-size: 14px;
+line-height: 1.714;
+letter-spacing: 0.03em;
+color: var(--background-main-color);
+width: 232px;
+
 }
 
 .adress-footer-item:not(:last-child) {
@@ -787,7 +795,7 @@ a[href="https://goo.gl/maps/fY5pNtDdv6tUA1cWA"]
   display: flex;
   list-style: none;
   justify-content: space-between;
-  width: 206px;
+  width: 207px;
 }
 
 .footer-list {
